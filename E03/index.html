@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+<form action="http://servicios.ver.ucc.mx/procesar.php" method="GET">
+    <fieldset>
+        <legend>Datos personales</legend>
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required><br>
+        <label for="email">E-mail</label><br>
+        <input type="email" id="email" name="email" placeholder="e-mail" required><br>
+        <label for="password">Contraseña</label><br>
+        <input type="password" id="password" name="password" placeholder="Contraseña" required><br>
+        <input type="radio" id="h" name="sexo" value="h" checked="radio">
+        <label for="h">Hombre</label>
+        <input type="radio" id="m" name="sexo" value="m">
+        <label for="m">Mujer</label><br>
+    </fieldset>
+    <fieldset>
+        <legend>Servicio de noticias</legend>
+        <input type="checkbox" id="op1" name="noticias[]" value="Noticias de política">
+        <label for="op1">Noticias de política</label><br>
+        <input type="checkbox" id="op2" name="noticias[]" value="Noticias de espectáculos">
+        <label for="op2">Noticias de espectáculos</label><br>
+        <input type="checkbox" id="op3" name="noticias[]" value="Noticias de tecnología">
+        <label for="op3">Noticias de tecnología</label><br>
+        <label for="metodo">Método de entrega</label><br>
+        <select name="metodo" id="metodo">
+            <option value="Desde el portal">Desde el portal</option>
+            <option value="Enviar a mi e-mail">Enviar a mi e-mail</option>
+        </select>
+        <label>Observacion</label><br>
+        <textarea name="message" rows="5" cols="30"></textarea>
+    </fieldset>
+</form><br>
+<input type="submit" value="Enviar">
+
+</body>
+</html>
